@@ -1,0 +1,72 @@
+
+@font-face{
+  font-family: "Futura T Light";
+  src: url("https://github.com/HNow/data-for-bodymovin/blob/main/Futura%20T%20Light%20Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Futura Light";
+  src: url("https://github.com/HNow/data-for-bodymovin/blob/main/Futura%20T%20Light%20Regular.ttf") format("truetype");
+}
+/* Container which holds all the buttons */
+.checkCircles {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+ 
+  font-family: Futura T Light;
+
+}
+
+/* Removes the defualt radio button*/
+.checkCircles input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Making custom radio button*/
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* Activates on hover to display a darken overlay for the hovered option*/
+.checkCircles:hover input ~ .checkbox {
+  background-color: rgb(16, 11, 37);
+}
+
+/* When the radio button is checked, add a blue background */
+.checkCircles input:checked ~ .checkbox {
+  background-color: #2f3cb1;
+}
+
+/* Makes the white dot for indicating a chosen option*/
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Displays the white circle when chosing an option */
+.checkCircles input:checked ~ .checkbox:after {
+  display: block;
+}
+
+/* For the inerior white circle of a chosen section) */
+.checkCircles .checkbox:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
