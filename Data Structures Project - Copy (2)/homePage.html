@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<! Hisham 2021/05/26 data structure assignment
+this is the homepage for our website
+animation to JSON and JSON file player via https://github.com/airbnb/lottie-web> 
+
+<title>Saferoom</title>
+
+ <style>
+.parentAnimButton{
+    position: absolute;
+    top: 750px;
+    left: 675px;;
+
+  
+}/* this is the CSS element which acts upon the div surrounding the 
+button animation, it functions to move the button relative to the top left of the screen. */
+
+
+bm{
+ padding: 0px;
+margin:0px;
+
+}
+#interact{
+font-size: 25px;
+font-family: futura t light;
+border-radius: 10px;
+border-color: transparent;
+z-index: 5;
+
+}
+
+
+ </style>
+ 
+<head> 
+<meta charset="UTF-8"/> 
+
+<body>  
+<div class="wrapper">  
+
+
+
+<button style="background:transparent; border: hidden;  width: 300px; height: 100px; position: relative; top: 950px; left: 765px; z-index: 6;" type="button" onclick="myFunction()"></button>
+<!this is the code which defines the button on the homepage to lead to next page of the webiste, when clicked it execuetes the javascript function called myFunction>
+
+
+    <script>
+        function myFunction(){
+        location.href='formPage.html'; 
+
+        /*This function opens the html document named 'formPage.html'*/
+        }
+         </script>
+
+
+<div style="width: 1920; height:1080; margin: -8px;" id='bm'> </div> <!the -8px margin is needed as a div container adds a margin of 8px>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"> </script>
+<! this section of javascript  works to fetch the code of a player which will be used to read and interperet custom animations
+which are stored as JSON files>
+
+<script src="homepageAnim.js"> </script>
+<!this javascript statement opens and runs the external havascript function called index.js>
+
+
+<div style="width: 600px; height: 400px;"class="parentAnimButton">
+
+    <!This div acts as the parent container for the button animation which will use an alternate method to fetch, interperet, and display the JSON animation data.>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<!This javascript once again loads the player which will handle the interperetation of the JSON animation data>
+
+<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_vrkjtpmx.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;" hover   ></lottie-player>
+<! this code functions very similiary to the previous code which called upon index.js and the code within index.js. 
+With properties such as size being dictated through a style tag this time and options such as hover being very simple to add thanks to the lottie preview website>
+</div>
+
+
+<div style="border:transparent; border-color:crimson; position:absolute; top: 10px;left:0px; width: 300px; height:100px;  ">  <button id=interact onclick="goNext()" type="button">Help and About</button> </div>
+    
+    <script>
+
+function goNext(){
+location.href="helpAndAbout.html";
+}
+  </script>
+
+</body>
+
+
+
+</head>

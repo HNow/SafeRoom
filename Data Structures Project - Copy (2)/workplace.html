@@ -1,0 +1,132 @@
+<! Hisham Nasir
+workplace racism page>
+
+<style>
+    @font-face{
+      font-family: "Futura Light";
+      src: url("https://github.com/HNow/data-for-bodymovin/blob/main/Futura%20T%20Light%20Regular.ttf") format("truetype");
+    }
+
+    @font-face{
+  font-family: "Futura T Light";
+  src: url("https://github.com/HNow/data-for-bodymovin/blob/main/Futura%20T%20Light%20Regular.ttf") format("truetype");
+    /* 
+        grabbing fonts to be used in the body
+    */
+}
+
+html,body{
+    width: 100%;
+    margin: 0;
+    /* 
+        Setting the overall page width to avoid overflow of divs and content within the divs 
+    */
+}
+    </style>
+<title>Saferoom</title>
+  <body>
+    <! Divs are used to blockout and determine the locations of text,animations, and other media>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <! this code gets the lottie player which will be used to play our JSON animations>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script><! This code gets the player necessary to implement lottie interactivity such as playing on scroll>
+
+    <div id=titleBox style= "border: transparent; border-color:burlywood; position: absolute; top: 0; left: 0; right: 0; height: 100px; ">
+
+        <p style="font-family: Futura Light;font-size:70px;text-align: center;"> Racism In The Workplace</p>
+        </div>
+        <! title box >
+        
+        <div id=scrollAnim style="border: transparent; border-color:rgb(40, 46, 128); position: absolute; top: 0; left: 0; height: 500px; width: 300px; overflow: hidden;">          
+<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_pizcbijb.json" mode="bounce" background="transparent"  speed="1"  style="width: 300px; height: 500px;"  loop  autoplay></lottie-player>
+<! top left animation>
+        </div>
+
+        <div id=sRoomAnim style="border: transparent; border-color:rgb(40, 46, 128); position: absolute; top: 0; right: 0; height: 500px; width: 300px; overflow: hidden; ">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_g8hk6nuz.json"  background="transparent"  speed="0.65"  style="width: 300px; height: 500px;" autoplay></lottie-player>
+            <! top right animation >
+        </div>
+
+        <div id="mediaOne"style="border: transparent; border-color:rgb(212, 0, 153) ; position: absolute; top: 700px; left: 0; height: 300px; width: 600px; overflow: hidden; "> 
+            <img src="workplaceImg1.svg"/>
+            <! first image>
+        </div>
+
+        <div id="textOne"style="border: transparent; border-color:rgb(100, 87, 153) ; position: absolute; top: 700px; right: 0; height: 300px; width: 1290px; overflow: hidden; "> 
+            <! first text box >
+            <p style="font-family: Futura T Light;font-size: 25px; text-align: justify;"> Racism in the workplace is a concept as old as work itself. 
+                Judging an individual's capacity to complete work, be viable for a certain type of work, or who they can work with based on their race 
+                are just some examples of the struggles which victims of workplace racism may face. The abhorrent action of workplace racism leads to a 
+                social structure within the workplace that actively puts minorities at a major disadvantage.
+                Working to disassemble this cruel pattern which has no place in society is a large scale effort. Education and remediation are two steps which can help with building a more inclusive workplace environment.</p>
+        </div>
+
+        
+        <div id="mediaTwo"style="border: transparent; border-color:rgb(212, 0, 153) ; position: absolute; top: 1100px; right: 0; height: 300px; width: 600px; overflow: hidden; border-radius: 10px; "> 
+            <img src="workplaceMedia2.jpg"  width="600px"/>
+            <! second image >
+        </div>
+        <div id="textTwo"style="border: transparent; border-color:rgb(100, 87, 153) ; position: absolute; top: 1100px; left: 0; height: 300px; width: 1290px; overflow: hidden; "> 
+
+            <p style="font-family: futura t light; font-size: 25px; text-align: justify; "> 
+                <! second textbox >
+                Workplace racism is extremely prevalent across the globe. Strong examples of this are cases such as that of Marcus Boyd who 
+                worked at a General Motors plant in Ohio. Marcus, a black man, faced daily racial harassment to the highest degree. 
+                From heavy usage of the n-word in the workplace by white coworkers to death threats and nooses tied in the break room. 
+                Marcus made complaints to his managers of the situation and was told to deal with it himself. This persisted until Marcus
+                 began to fear for his own safety at work to the point of quitting the job at his mothers request. 
+                </p>
+        </div>
+
+        
+        <div id="mediaThree"style="border: transparent; border-color:rgb(212, 0, 153) ; position: absolute; top: 1500px; left: 0; height: 300px; width: 600px; overflow: hidden; "> 
+            <! third image >
+            <img src="workplacemediaThree.svg"/>
+            
+        </div>
+        <div id="textThree"style="border: transparent; border-color:rgb(100, 87, 153) ; position: absolute; top: 1500px; right: 0; height: 300px; width: 1290px; overflow: hidden; "> 
+            <! third textbox>
+            <p style="font-family: futura t light; font-size: 25px; text-align: justify;"> Moving towards a full inclusive and racism free workplace should be the
+                 final goal. Racism has no place within the world let alone our workplaces where it hinders productivity and the mental health of workers.
+                  If you have been the victim of an incident of workplace racism you should take action, no matter how severe the transgression was.
+                   From microaggressions to severe cases such as that of Marcus Boyd do not be complacent when it comes to dealing with racism in the workplace. 
+                   Take immediate action by reporting the offense to the correct authorities such as a human resources department of even the police in extreme cases. 
+                   As a workplace manager attempting to curb workplace racism, implement technologies such as those made by ClearView Connects which allows employees
+                    to anonymously report workplace incidents of any nature.  </p>
+        </div>
+
+<div id=endAnim style="border:transparent; border-color:tomato; position:absolute; top: 1900px; left: 0px; right: 0px; height: 500px;"> 
+    <lottie-player id="firstLottie" src="https://assets7.lottiefiles.com/packages/lf20_laagtyrh.json" style="width:1903px; height: 500px;">"></lottie-player>
+    <! final animation being loaded in through a json file >
+    <script>
+    LottieInteractivity.create({
+        mode:"scroll",
+        player:'#firstLottie',
+        actions: [
+            {
+                visibility:[0,1],
+                type: "seek",
+                frames: [0, 38],
+            },
+        ]  
+    });
+    </script>
+<! interactivity script which makes the animation progressively load as the user scrolls down>
+</div>
+
+<div id=Spacer style="border:transparent; border-color:tomato; position:absolute; top: 2100px; left: 0px; right: 0px; height: 500px;"></div>
+
+<div id=button style="border:transparent; border-color:rgb(119, 87, 82); position:absolute; top: 2025px; left: 0px; right: 0px; height: 250px; text-align: center;">
+    <button style="font-family: futura T light; font-size: 25px; width: 500px; height: 100;  background-color: rgb(85, 122, 146);padding: 15px 8px; border: none; top:100px; border-radius: 10px; opacity: 0.9;"  type="button" onclick="meditateMove()"> Meditate</button>
+    <! button to move on to the next section of the website >
+</div>
+
+<script>
+    function meditateMove(){
+      location.href="meditationOne.html";
+    }
+      </script>
+      <! the function which redirects the user to the meditation page>
+</body>
+
+
+
