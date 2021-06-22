@@ -1,0 +1,152 @@
+/*Hisham Nasir
+CSS information for the lava blob animation*/
+
+.lava{
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background: -webkit-linear-gradient(90deg,orange,red);
+    border-radius: 58% 42% 43% 57% / 68% 22% 78% 32% ;
+    animation: lava 20s infinite;
+    z-index: -1;
+    opacity: 0.10;
+    -webkit-filter: blur(4px);
+
+    /* this code defines the properties of the lava blob and uses https://9elements.github.io/fancy-border-radius/ to create the unique blob like shape*/
+   } 
+   @keyframes lava {
+   
+       25%{
+   top: 80%;
+   left: 60%;
+   border-radius: 94% 6% 43% 57% / 32% 66% 34% 68% ;
+       }
+       50%{
+   top: 70%;
+   left: 50%;
+   border-radius: 26% 74% 43% 57% / 32% 100% 0% 68% ;
+       }  
+   75%{
+       top: 65%;
+   left: 40%;
+   border-radius: 2% 98% 13% 87% / 91% 41% 59% 9% ;
+   
+/*this code defines the animation keyframes for the blob by changeing its border radius and position*/
+   }
+   
+   }
+
+.lavaTwo{
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    top: 42%;
+    left: 33%;
+    transform: translate(-40%,-30%);
+    width: 300px;
+    height: 250px;
+    background: -webkit-linear-gradient(75deg,orange,red);
+    border-radius: 13% 87% 13% 87% / 91% 0% 100% 9%  ;
+    animation: lavaTwo 40s infinite;
+    z-index: -1;
+    -webkit-filter: blur(4px);
+    opacity: 0.10;
+   } 
+   @keyframes lavaTwo{
+   
+       25%{
+   top: 40%;
+   left: 25%;
+   border-radius: 13% 87% 13% 87% / 91% 90% 10% 9%  ;
+       }
+       50%{
+   top: 28%;
+   left: 20%;
+   border-radius: 88% 12% 13% 87% / 69% 90% 10% 31% ;
+       }  
+   75%{
+       top: 65%;
+   left: 40%;
+   border-radius: 0% 100% 70% 30% / 69% 13% 87% 31%  ;
+
+   }
+   
+   }
+   .lavaThree{
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    top: 82%;
+    left: 73%;
+    transform: translate(-40%,-30%);
+    width: 100px;
+    height: 150px;
+    background: -webkit-linear-gradient(100deg,orange,red);
+    border-radius: 13% 87% 13% 87% / 91% 0% 100% 9%  ;
+    animation: lavaThree 20s infinite;
+    z-index: -1;
+    -webkit-filter: blur(4px);
+    opacity: 0.10;
+   } 
+   @keyframes lavaThree{
+   
+       25%{
+   top: 70%;
+   left: 75%;
+   border-radius: 13% 87% 13% 87% / 91% 90% 10% 9%  ;
+       }
+       50%{
+   top: 63%;
+   left: 68%;
+   border-radius: 88% 12% 13% 87% / 69% 90% 10% 31% ;
+       }  
+   75%{
+       top: 65%;
+   left: 60%;
+   border-radius: 0% 100% 70% 30% / 69% 13% 87% 31%  ;
+
+   }
+
+   }
+
+   .lavaFour{
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    top: 19%;
+    left: 67%;
+    transform: translate(-40%,-30%);
+    width: 460px;
+    height: 550px;
+    background: -webkit-linear-gradient(10deg,orange,red);
+    border-radius: 2% 98% 0% 100% / 100% 76% 24% 0%  ;
+    animation: lavaFour 90s infinite;
+    z-index: -2;
+    -webkit-filter: blur(4px);
+    opacity: 0.10;
+   } 
+   @keyframes lavaFour{
+   
+       25%{
+   top: 10%;
+   left: 65%;
+   border-radius: 2% 98% 0% 100% / 13% 76% 24% 87%  ;
+       }
+       50%{
+   top: 17%;
+   left: 58%;
+   border-radius: 2% 98% 86% 14% / 13% 76% 24% 87%  ;
+       }  
+   75%{
+       top: 23%;
+   left: 64%;
+   border-radius: 94% 6% 86% 14% / 13% 76% 24% 87%   ;
+  
+   }
+   
+   }
